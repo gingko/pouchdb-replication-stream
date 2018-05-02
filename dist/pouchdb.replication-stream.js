@@ -138,6 +138,8 @@ function WritableStreamPouch(opts, callback) {
     return 'writableStream';
   };
 
+  api._remote = false;
+
   api._id = utils.toPromise(function (callback) {
     callback(null, api.instanceId);
   });
